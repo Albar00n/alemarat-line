@@ -20,7 +20,7 @@
 		"react-dom": "^18",
 		"reactstrap": "^9.2.2",
 		"simple-react-validator": "^1.6.2",
-		"swiper": "^9.3.0",
+		"swiper": "10.0.0",
 		"yet-another-react-lightbox": "^3.20.2"
 	},
 	"devDependencies": {
