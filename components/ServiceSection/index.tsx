@@ -70,7 +70,7 @@ const ServiceSection = () => {
                     <h3>{t(item.title)}</h3>
                     <p
                       style={{
-                        height: '100px',
+                        height: '150px',
                       }}
                     >
                       {t(item.desc)}
