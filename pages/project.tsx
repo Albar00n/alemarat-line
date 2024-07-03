@@ -1,23 +1,26 @@
-import Footer from '@/components/footer'
-import Navbar from '@/components/Navbar'
-import PageTitle from '@/components/PageTitle'
-import Scrollbar from '@/components/Scrollbar'
-import ProjectSection from "@/components/ProjectSection"
-import React from 'react'
+import { GetStaticProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'react-i18next'
+import Seo from '@/components/Seo'
+import ProjectDetails from '@/components/PagesDetails/ProjectDetails'
 
 const Project = () => {
+  const { t } = useTranslation('common')
+
   return (
     <>
-            <Navbar/>
-            <PageTitle pageTitle={'Projects'} pagesub={'Project'}/>
-            <ProjectSection/>
+      <Seo title={t('nav_projects')} url="/projects" />
 
-            <Footer/>
-            <Scrollbar/>
-
-
+      <ProjectDetails />
     </>
   )
 }
-
+export const getServerSideProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || '', ['common'])),
+    },
+    // revalidate: 20,
+  }
+}
 export default Project

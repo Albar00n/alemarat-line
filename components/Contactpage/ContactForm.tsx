@@ -1,131 +1,134 @@
 import React, { useState } from 'react'
-import SimpleReactValidator from 'simple-react-validator';
+import { useTranslation } from 'react-i18next'
+import SimpleReactValidator from 'simple-react-validator'
 
 const ContactForm = () => {
+  const { t } = useTranslation('common')
 
-    const [forms, setForms] = useState({
+  const [forms, setForms] = useState({
+    name: '',
+    email: '',
+    date: '',
+    phone: '',
+    message: '',
+  })
+  const [validator] = useState(
+    new SimpleReactValidator({
+      className: 'errorMessage',
+    })
+  )
+  const changeHandler = (e: any) => {
+    setForms({ ...forms, [e.target.name]: e.target.value })
+    if (validator.allValid()) {
+      validator.hideMessages()
+    } else {
+      validator.showMessages()
+    }
+  }
+
+  const submitHandler = (e: any) => {
+    e.preventDefault()
+    if (validator.allValid()) {
+      validator.hideMessages()
+      setForms({
         name: '',
         email: '',
         date: '',
-        time: '',
-        message: ''
-    });
-    const [validator] = useState(new SimpleReactValidator({
-        className: 'errorMessage'
-    }));
-    const changeHandler = (e:any) => {
-        setForms({ ...forms, [e.target.name]: e.target.value })
-        if (validator.allValid()) {
-            validator.hideMessages();
-        } else {
-            validator.showMessages();
-        }
-    };
+        phone: '',
+        message: '',
+      })
+    } else {
+      validator.showMessages()
+    }
+  }
 
-    const submitHandler = (e:any) => {
-        e.preventDefault();
-        if (validator.allValid()) {
-            validator.hideMessages();
-            setForms({
-                name: '',
-                email: '',
-                date: '',
-                time: '',
-                message: ''
-            })
-        } else {
-            validator.showMessages();
-        }
-    };
-
-    return (
-        <section className="contact-page mb-30">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-xl-10 col-lg-11">
-                        <form className="contact-form bg-light rmt-0" onSubmit={(e) => submitHandler(e)}>
-                            <div className="section-title text-center mb-40">
-                                <h2>Request a Visit</h2>
-                            </div>
-                            <div className="row clearfix">
-                                <div className="col-md-12">
-                                    <div className="form-group">
-                                        <input
-                                            className='form-control'
-                                            value={forms.name}
-                                            type="text"
-                                            name="name"
-                                            onBlur={(e) => changeHandler(e)}
-                                            onChange={(e) => changeHandler(e)}
-                                            placeholder="Name" />
-                                        {validator.message('name', forms.name, 'required|alpha_space')}
-                                    </div>
-                                </div>
-                                <div className="col-md-12">
-                                    <div className="form-group">
-                                        <input
-                                            className='form-control'
-                                            value={forms.email}
-                                            type="email"
-                                            name="email"
-                                            onBlur={(e) => changeHandler(e)}
-                                            onChange={(e) => changeHandler(e)}
-                                            placeholder="Email" />
-                                        {validator.message('email', forms.email, 'required|email')}
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="form-group">
-                                        <input
-                                            className='form-control'
-                                            value={forms.date}
-                                            type="text"
-                                            name="date"
-                                            onBlur={(e) => changeHandler(e)}
-                                            onChange={(e) => changeHandler(e)}
-                                            placeholder="Date" />
-                                        {validator.message('date', forms.date, 'required|alpha_space')}
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="form-group">
-                                        <input
-                                            className='form-control'
-                                            value={forms.time}
-                                            type="text"
-                                            name="time"
-                                            onBlur={(e) => changeHandler(e)}
-                                            onChange={(e) => changeHandler(e)}
-                                            placeholder="Time" />
-                                        {validator.message('time', forms.time, 'required|alpha_space')}
-                                    </div>
-                                </div>
-                                <div className="col-md-12">
-                                    <div className="form-group">
-                                        <textarea
-                                            className='form-control'
-                                            rows={4}
-                                            onBlur={(e) => changeHandler(e)}
-                                            onChange={(e) => changeHandler(e)}
-                                            value={forms.message}
-                                            name="message"
-                                            placeholder="Message">
-                                        </textarea>
-                                        {validator.message('message', forms.message, 'required')}
-
-                                    </div>
-                                </div>
-                                <div className="col-md-12">
-                                    <button type="submit" className="theme-btn mt-40">Send</button>
-                                </div>
-                            </div>
-                            <div className="title-rotated">contact</div>
-                        </form>
-                    </div>
+  return (
+    <section className="contact-page mb-30">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-xl-10 col-lg-11">
+            <form
+              className="contact-form bg-light rmt-0"
+              onSubmit={(e) => submitHandler(e)}
+            >
+              <div className="section-title text-center mb-40">
+                <h2>{t('contact_title')}</h2>
+              </div>
+              <div className="row clearfix">
+                <div className="col-md-12">
+                  <div className="form-group">
+                    <input
+                      className="form-control"
+                      value={forms.name}
+                      type="text"
+                      name="name"
+                      onBlur={(e) => changeHandler(e)}
+                      onChange={(e) => changeHandler(e)}
+                      placeholder={`${t('contact_name')}`}
+                    />
+                    {validator.message(
+                      'name',
+                      forms.name,
+                      'required|alpha_space'
+                    )}
+                  </div>
                 </div>
-            </div>
-        </section>
-    )
+                <div className="col-md-12">
+                  <div className="form-group">
+                    <input
+                      className="form-control"
+                      value={forms.email}
+                      type="email"
+                      name="email"
+                      onBlur={(e) => changeHandler(e)}
+                      onChange={(e) => changeHandler(e)}
+                      placeholder={`${t('contact_email')}`}
+                    />
+                    {validator.message('email', forms.email, 'required|email')}
+                  </div>
+                </div>
+                <div className="col-md-12">
+                  <div className="form-group">
+                    <input
+                      className="form-control"
+                      value={forms.phone}
+                      type="number"
+                      name="phone"
+                      onBlur={(e) => changeHandler(e)}
+                      onChange={(e) => changeHandler(e)}
+                      placeholder={`${t('contact_phone')}`}
+                    />
+                    {validator.message('email', forms.phone, 'required|phone')}
+                  </div>
+                </div>
+
+                <div className="col-md-12">
+                  <div className="form-group">
+                    <textarea
+                      className="form-control"
+                      rows={4}
+                      onBlur={(e) => changeHandler(e)}
+                      onChange={(e) => changeHandler(e)}
+                      value={forms.message}
+                      name="message"
+                      placeholder={`${t('contact_message')}`}
+                    ></textarea>
+                    {validator.message('message', forms.message, 'required')}
+                  </div>
+                </div>
+                <div className="col-md-12">
+                  <button type="submit" className="theme-btn mt-40">
+                    {t('contact_send')}
+                  </button>
+                </div>
+              </div>
+              <div className="title-rotated">{t('nav_contact')}</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
-export default ContactForm;
+export default ContactForm

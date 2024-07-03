@@ -1,24 +1,26 @@
-import ContactSection from '@/components/ContactSection'
-import Footer from '@/components/footer'
-import Navbar from '@/components/Navbar'
-import PageTitle from '@/components/PageTitle'
-import Scrollbar from '@/components/Scrollbar'
-import FaqSection from "@/components/FaqSection"
-import React from 'react'
-import ServiceSection from '@/components/ServiceSection'
+import { GetStaticProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'react-i18next'
+import Seo from '@/components/Seo'
+import ServicesDetails from '@/components/PagesDetails/ServicesDetails'
 
 const Services = () => {
+  const { t } = useTranslation('common')
+
   return (
     <>
-      <Navbar hclass={'header-style-2'}/>
-            <PageTitle pageTitle={'Services'} pagesub={'Service'}/>
-            <FaqSection />
-            <ServiceSection/>
-            <ContactSection />
-            <Footer/>
-            <Scrollbar/>
+      <Seo title={t('nav_services')} url="/services" />
+      <ServicesDetails />
     </>
   )
 }
 
+export const getServerSideProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || '', ['common'])),
+    },
+    // revalidate: 20,
+  }
+}
 export default Services

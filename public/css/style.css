@@ -155,7 +155,7 @@ footer:after {
 /** Section Title style */
 .section-title h6 {
     text-transform: uppercase;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
     line-height: 34px;
 }
 
@@ -165,7 +165,7 @@ footer:after {
 
 .section-title h2 {
     text-transform: uppercase;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
     font-weight: 600;
 }
 
@@ -201,7 +201,7 @@ a.theme-btn {
     background: #ca9c6a;
     display: inline-block;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     font-family: 'Oswald', sans-serif;
 }
 
@@ -308,7 +308,7 @@ a.theme-btn.style-two {
     background-color: #FFFFFF;
     background-position: center center;
     background-repeat: no-repeat;
-    /* background-image: url(../images/preloader.gif); */
+    background-image: url(../images/preloader.gif);
 }
 
 /*** Scroll Top style ** */
@@ -355,7 +355,7 @@ a.theme-btn.style-two {
 .form-group textarea::placeholder {
     color: #c9c9c9;
     font-size: 14px;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     text-transform: uppercase;
 }
 
@@ -418,7 +418,7 @@ input[type="submit"]:focus {
 .hero-content .text-lighter {
     color: #ca9c6a;
     font-weight: 200;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
 }
 
 .scroll-down {
@@ -487,7 +487,7 @@ input[type="submit"]:focus {
 /******************** 03. Page Banner ***************** */
 /****************************************************** */
 .banner-section {
-    /* background: url(../images/banner.png); */
+    background: url(../images/banner.png);
     background-size: cover;
     display: flex;
 }
@@ -518,7 +518,7 @@ input[type="submit"]:focus {
 .page-title span {
     font-size: 14px;
     font-weight: 300;
-    letter-spacing: 9px;
+    /* letter-spacing: 9px; */
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
 }
@@ -541,7 +541,7 @@ input[type="submit"]:focus {
 .banner-section nav li {
     display: inline-block;
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
@@ -626,7 +626,7 @@ input[type="submit"]:focus {
     min-height: 600px;
     position: relative;
     height: calc(100% - 100px);
-    /* background: url('../images/wp/about.png') no-repeat center/cover; */
+    background: url('../images/wp/about.png') no-repeat center/cover;
 }
 
 .about-image:before {
@@ -641,7 +641,7 @@ input[type="submit"]:focus {
     padding-left: 35px;
     color: transparent;
     background: #faf7f0;
-    letter-spacing: 40px;
+    /* letter-spacing: 40px; */
     text-transform: uppercase;
     -webkit-text-stroke: 1px #e1e1e1;
     font-family: 'Oswald', sans-serif;
@@ -711,7 +711,7 @@ input[type="submit"]:focus {
 /***************** 06. Video Section  **************** */
 /****************************************************** */
 .video-section {
-    /* background: url(../images/video/video-bg.png) no-repeat right 30px; */
+    background: url(../images/video/video-bg.png) no-repeat right 30px;
 }
 
 .video-inner {
@@ -795,13 +795,13 @@ input[type="submit"]:focus {
 /*************** 08. Rastaurant Section  ************** */
 /****************************************************** */
 .rastaurant-left {
-    /* background: url('../images/restaurants/left.png') no-repeat center/cover; */
+    background: url('../images/restaurants/left.png') no-repeat center/cover;
     min-height: 500px;
     height: 100%;
 }
 
 .rastaurant-right {
-    /* background: url('../images/restaurants/right.png') no-repeat center/cover; */
+    background: url('../images/restaurants/right.png') no-repeat center/cover;
 }
 
 .ras-content {
@@ -811,7 +811,7 @@ input[type="submit"]:focus {
 .rastaurant-right h2 {
     font-size: 60px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     line-height: 100px;
     font-weight: 600;
 }
@@ -837,7 +837,7 @@ input[type="submit"]:focus {
 /*************** 09. Apartment Section  *************** */
 /****************************************************** */
 .apartment-section .section-title h2 {
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
 }
 
 .apartment-section .section-title .thin {
@@ -898,7 +898,7 @@ input[type="submit"]:focus {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     display: block;
     margin-bottom: 8px;
 }
@@ -939,7 +939,7 @@ input[type="submit"]:focus {
     color: #1e1e1e;
     font-size: 18px;
     font-weight: 500;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
 }
@@ -960,7 +960,7 @@ input[type="submit"]:focus {
     color: #ca9c6a;
     font-weight: 700;
     margin-bottom: 30px;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     text-transform: uppercase;
     justify-content: space-between;
 }
@@ -971,7 +971,7 @@ input[type="submit"]:focus {
 
 /* property single */
 .property-single-left {
-    /* background: url('../images/apartment/property-left.png') no-repeat center/cover; */
+    background: url('../images/apartment/property-left.png') no-repeat center/cover;
     padding: 40px 40px 40px 55px;
     height: 888px;
     display: flex;
@@ -979,7 +979,7 @@ input[type="submit"]:focus {
 }
 
 .property-left-content {
-    /* background: url('../images/apartment/property-left-content-bg.png') no-repeat center/cover; */
+    background: url('../images/apartment/property-left-content-bg.png') no-repeat center/cover;
     padding: 55px 40px 40px;
 }
 
@@ -987,7 +987,7 @@ input[type="submit"]:focus {
     font-size: 30px;
     font-weight: 700;
     line-height: 1.65;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     margin-bottom: 25px;
     text-transform: uppercase;
 }
@@ -1039,7 +1039,7 @@ input[type="submit"]:focus {
     color: white;
     font-size: 36px;
     font-weight: 700;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     margin-bottom: 25px;
     text-transform: uppercase;
 }
@@ -1094,14 +1094,14 @@ input[type="submit"]:focus {
     color: #ca9c6a;
     font-weight: 200;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 .success-content h6 {
     font-size: 17px;
 
     text-transform: uppercase;
-    letter-spacing: 14px;
+    /* letter-spacing: 14px; */
     font-weight: 200;
 }
 
@@ -1166,7 +1166,7 @@ input[type="submit"]:focus {
 .faq-accordion .card-header .accordion-button{
     color: #1e1e1e;
     font-weight: 300;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     padding: 0;
@@ -1235,7 +1235,7 @@ input[type="submit"]:focus {
     bottom: 70px;
     right: 25px;
     z-index: -1;
-    letter-spacing: 30px;
+    /* letter-spacing: 30px; */
     text-transform: uppercase;
     -webkit-text-stroke: 1px #e1e1e1;
     font-family: 'Oswald', sans-serif;
@@ -1307,7 +1307,7 @@ input[type="submit"]:focus {
 
 .call-action-inner .section-title h2 {
     text-transform: capitalize;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     line-height: 50px;
 }
 
@@ -1325,7 +1325,7 @@ input[type="submit"]:focus {
 .subscribe input::placeholder {
     color: #fee8d0;
     font-size: 12px;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     text-transform: uppercase;
 }
 
@@ -1354,7 +1354,7 @@ input[type="submit"]:focus {
 
 .team-des h3 {
     text-transform: uppercase;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     transition: 0.5s;
 }
 
@@ -1362,7 +1362,7 @@ input[type="submit"]:focus {
     font-size: 12px;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
 }
 
 .team-item:hover .team-des {
@@ -1408,7 +1408,7 @@ input[type="submit"]:focus {
 .blog-content h3 {
     font-size: 34px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     margin-bottom: 25px;
 }
 
@@ -1444,7 +1444,7 @@ input[type="submit"]:focus {
     font-size: 14px;
     color: #ca9c6a;
     font-weight: 700;
-    letter-spacing: 8px;
+    /* letter-spacing: 8px; */
     text-transform: uppercase;
 }
 
@@ -1523,7 +1523,7 @@ blockquote {
 .search-form .theme-btn {
     padding: 12px;
     min-width: 130px;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
 }
 
 /****************************************************** */
@@ -1575,14 +1575,14 @@ blockquote {
 .contact-widget h3 {
     color: #FFFFFF;
     font-size: 22px;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     margin-bottom: 25px;
     text-transform: uppercase;
 }
 
 .contact-widget h6 {
     color: white;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     line-height: 24px;
     margin-bottom: 20px;
 }

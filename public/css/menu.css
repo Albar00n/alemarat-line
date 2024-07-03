@@ -84,7 +84,7 @@
 .languages .list li,
 .languages .current {
     padding: 0 20px 0 50px;
-    /* background: url(../images/languages/usa.png) no-repeat 10px; */
+    background: url(../images/languages/usa.png) no-repeat 10px;
 }
 
 .languages .nice-select .list {
