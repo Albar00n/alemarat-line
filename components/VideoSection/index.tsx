@@ -22,7 +22,7 @@ const VideoSection = (props: any) => {
               left: '0',
               top: '0',
             }}
-            src="https://thedxi.com/video/client"
+            src="https://thedxi.com/video/line"
           />
         </div>
       </div>
