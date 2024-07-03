@@ -67,7 +67,11 @@ const ServiceSection = () => {
                     alt="Team"
                   />
                   <div className="team-des">
-                    <h3>{t(item.title)}</h3>
+                    <h3
+                    style={{
+                        textAlign:"center"
+                      }}
+                    >{t(item.title)}</h3>
                     <p
                       style={{
                         height: '150px',
