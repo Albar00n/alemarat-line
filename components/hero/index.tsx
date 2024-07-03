@@ -10,7 +10,9 @@ const Hero = () => {
     <section className="hero-slider hero-style-4">
       <div
         className="slide-inner slide-bg-image"
-        style={{ backgroundImage: `url('/images/slider/slide-3.jpg')` }}
+        style={{
+          backgroundImage: `url('/images/global/services_one_six.jpeg')`,
+        }}
       >
         <div className="container-fluid">
           <div className="slide-content">

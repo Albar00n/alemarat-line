@@ -5,6 +5,7 @@ import VideoSection from '@/components/VideoSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/footer'
 import Scrollbar from '@/components/Scrollbar'
+import ProjectSection from '../ProjectSection'
 
 const HomeDetails = () => {
   return (
@@ -12,6 +13,7 @@ const HomeDetails = () => {
       <Hero />
       <ServiceSection />
       <VideoSection vclass={'pb-120'} />
+      <ProjectSection />
       <ContactSection />
     </>
   )

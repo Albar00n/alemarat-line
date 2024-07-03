@@ -18,38 +18,47 @@ const Seo = ({ title, url }: any) => {
         <link
           rel="image_src"
           type="image/png"
-          href="https://alandols.vercel.app/logo.png"
+          href="https://alemarat-line.vercel.app/logo.png"
         />
-        <link rel="shortcut icon" href="https://alandols.vercel.app/logo.png" />
-        <link rel="publisher" href="https://alandols.vercel.app/" />
+        <link
+          rel="shortcut icon"
+          href="https://alemarat-line.vercel.app/logo.png"
+        />
+        <link rel="publisher" href="https://alemarat-line.vercel.app/" />
         <meta name="author" content="https://qurashi.xyz" />
         <meta name="copyright" content="https://qurashi.xyz" />
-        <link rel="icon" href="https://alandols.vercel.app/logo.png" />
+        <link rel="icon" href="https://alemarat-line.vercel.app/logo.png" />
         <meta name="og:locale" content="ar" />
-        <meta name="og:url" content={`https://alandols.vercel.app/${url}`} />
+        <meta
+          name="og:url"
+          content={`https://alemarat-line.vercel.app/${url}`}
+        />
         <meta name="og:type" content="website" />
-        <meta name="og:site_name" content={title} />
-        <meta name="og:title" content={title} />
+        <meta name="og:site_name" content={`ALEMARAT LINE ${title}`} />
+        <meta name="og:title" content={`ALEMARAT LINE ${title}`} />
         <meta
           name="og:description"
-          content="We at 'Al-Andalus Palace Engineering Consultations' are proud to provide comprehensive and distinguished consulting services in the fields of construction, design and supervision of all types of projects"
+          content="It is a company specialized in the field of contracting and general maintenance. It was established to provide integrated services in the construction and maintenance sector in the Al Ain region. We are committed to providing high-quality services, and we ensure that our customers’ requirements are met accurately and effectively. Emirates Contracting and General Maintenance Company is your ideal choice for your projects in the United Arab Emirates."
         />
         <meta
           name="description"
-          content="We at 'Al-Andalus Palace Engineering Consultations' are proud to provide comprehensive and distinguished consulting services in the fields of construction, design and supervision of all types of projects"
+          content="It is a company specialized in the field of contracting and general maintenance. It was established to provide integrated services in the construction and maintenance sector in the Al Ain region. We are committed to providing high-quality services, and we ensure that our customers’ requirements are met accurately and effectively. Emirates Contracting and General Maintenance Company is your ideal choice for your projects in the United Arab Emirates."
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
+        <meta name="twitter:title" content={`ALEMARAT LINE ${title}`} />
         <meta
           name="twitter:description"
-          content="We at 'Al-Andalus Palace Engineering Consultations' are proud to provide comprehensive and distinguished consulting services in the fields of construction, design and supervision of all types of projects"
+          content="It is a company specialized in the field of contracting and general maintenance. It was established to provide integrated services in the construction and maintenance sector in the Al Ain region. We are committed to providing high-quality services, and we ensure that our customers’ requirements are met accurately and effectively. Emirates Contracting and General Maintenance Company is your ideal choice for your projects in the United Arab Emirates."
         />
         <meta
           name="twitter:image"
-          content="https://alandols.vercel.app/logo.png"
+          content="https://alemarat-line.vercel.app/logo.png"
         />
 
-        <meta name="og:image" content="https://alandols.vercel.app/logo.png" />
+        <meta
+          name="og:image"
+          content="https://alemarat-line.vercel.app/logo.png"
+        />
         <link rel="apple-touch-icon" href="/pwd/apple-touch-icon.png" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />

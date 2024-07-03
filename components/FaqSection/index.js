@@ -29,8 +29,8 @@ const FaqSection = (props) => {
         <div className="row">
           <div className="col-lg-6 pr-125 rpr-15">
             <div class="service-page-images rmb-150">
-              <img src={'/images/services/img1.png'} alt="Services" />
-              <img src={'/images/services/img2.png'} alt="Service" />
+              <img src={'/images/global/ten_three.jpeg'} alt="Services" />
+              <img src={'/images/global/services_six_one.jpeg'} alt="Service" />
             </div>
           </div>
           <div className="col-lg-6 pl-0">

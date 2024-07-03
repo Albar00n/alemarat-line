@@ -387,6 +387,7 @@
         position: absolute;
         right: 15px;
         top: 11px;
+        z-index: 9;
     }
 
     .nav-search form {

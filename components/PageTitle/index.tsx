@@ -11,13 +11,14 @@ const PageTitle = (props: any) => {
         <div className="banner-inner">
           <div className="page-title">
             <h2>{t(props.pageTitle)}</h2>
-            <span>{t(props.pagesub)}</span>
+            {/* <span>{t(props.pagesub)}</span> */}
           </div>
-          <nav aria-label="breadcrumb">
+          <nav>
             <ol className="breadcrumb">
-              <li className="breadcrumb-item">
+              <li className="breadcrumb-ite">
                 <Link href="/">{t('nav_home')}</Link>
               </li>
+              <span className="mx-2">/</span>
               <li className="breadcrumb-item active" aria-current="page">
                 {t(props.pagesub)}
               </li>

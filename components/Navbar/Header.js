@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import MobileMenu from './MobileMenu'
 import { useTranslation } from 'react-i18next'
-
+import { useRouter } from 'next/router'
 const Header = (props) => {
   const { t } = useTranslation('common')
-
+  const router = useRouter()
+  const { pathname, query, asPath, locale } = router
   const [menuActive, setMenuState] = useState(false)
   const [SearchActive, setSearchState] = useState(false)
 
@@ -20,7 +21,7 @@ const Header = (props) => {
   const data = [
     { id: '1', title: 'nav_home', link: '/' },
     { id: '2', title: 'nav_about', link: '/about' },
-    { id: '3', title: 'nav_projects', link: '/projects' },
+    { id: '3', title: 'nav_projects', link: '/project' },
     { id: '4', title: 'nav_services', link: '/services' },
     { id: '5', title: 'nav_contact', link: '/contact' },
   ]
@@ -77,7 +78,48 @@ const Header = (props) => {
                   ></button>
                 </form>
               </div>
-
+              <Link
+                href={asPath}
+                locale={locale === 'en' ? 'ar' : 'en'}
+                legacyBehavior
+                title={locale === 'en' ? 'English' : 'عربي'}
+              >
+                <a
+                  style={{
+                    fontSize: '20px',
+                    fontWeight: '500',
+                    lineHeight: '30px',
+                    display: 'flex',
+                    alignItems: 'start',
+                    gap: '.4rem',
+                    color: '#1f1f1f',
+                  }}
+                  className="mx-2"
+                  title={locale === 'en' ? 'English' : 'عربي'}
+                >
+                  {locale === 'en' ? 'AR' : 'EN'}
+                  {locale == 'en' ? (
+                    <img
+                      src="/icons/ar.svg"
+                      alt="Lang AR SPORTS ACADEMYE"
+                      title="Lang AR SPORTS ACADEMYE"
+                      width={30}
+                      height={30}
+                      loading="lazy"
+                    />
+                  ) : (
+                    <img
+                      src="/icons/en.svg"
+                      alt="Lang EN SPORTS ACADEMYE"
+                      title="Lang EN SPORTS ACADEMYE"
+                      width={30}
+                      height={30}
+                      loading="lazy"
+                    />
+                  )}
+                  {/* <IoFootball size="1rem" color="" /> */}
+                </a>
+              </Link>
               <div className="menu-sidebar">
                 <button onClick={() => setMenuState(!menuActive)}>
                   <span className="icon-bar"></span>
@@ -150,18 +192,18 @@ const Header = (props) => {
               </form>
             </div>
             <div className="social-icons">
-              <Link href="/">
+              {/* <Link href="/">
                 <i className="fa fa-twitter"></i>
-              </Link>
+              </Link> */}
               <Link href="/">
                 <i className="fa fa-facebook-f"></i>
               </Link>
               <Link href="/">
                 <i className="fa fa-instagram"></i>
               </Link>
-              <Link href="/">
+              {/* <Link href="/">
                 <i className="fa fa-pinterest-p"></i>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </section>

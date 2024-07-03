@@ -14,12 +14,18 @@ import CtaSection from '../CtaSection/CtaSection'
 import { useTranslation } from 'react-i18next'
 
 const images = [
-  '/images/instagram/instagram1.png',
-  '/images/instagram/instagram1.png',
-  '/images/instagram/instagram1.png',
-  '/images/instagram/instagram1.png',
-  '/images/instagram/instagram1.png',
-  '/images/instagram/instagram1.png',
+  '/images/global/one.jpeg',
+  '/images/global/two.jpeg',
+  '/images/global/three.jpeg',
+  '/images/global/four.jpeg',
+  '/images/global/five.jpeg',
+  '/images/global/six.jpeg',
+  '/images/global/seven.jpeg',
+  '/images/global/eight.jpeg',
+  '/images/global/nine.jpeg',
+  '/images/global/ten.jpeg',
+  '/images/global/ten_one.jpeg',
+  '/images/global/ten_two.jpeg',
 ]
 
 const Footer = (props: any) => {
@@ -48,6 +54,11 @@ const Footer = (props: any) => {
                       src={item}
                       alt="Instagram"
                       onClick={() => setOpen(true)}
+                      style={{
+                        width: '120px',
+                        height: '80px',
+                        objectFit: 'cover',
+                      }}
                     />
                     <div className="instagram-overlay">
                       <span onClick={() => setOpen(true)}>
@@ -91,18 +102,18 @@ const Footer = (props: any) => {
           <div className="container">
             <div className="bottom-inner">
               <div className="social-icons">
-                <Link onClick={ClickHandler} href="/">
+                {/* <Link onClick={ClickHandler} href="/">
                   <i className="fa fa-twitter"></i>
-                </Link>
+                </Link> */}
                 <Link onClick={ClickHandler} href="/">
                   <i className="fa fa-facebook"></i>
                 </Link>
                 <Link onClick={ClickHandler} href="/">
                   <i className="fa fa-instagram"></i>
                 </Link>
-                <Link onClick={ClickHandler} href="/">
+                {/* <Link onClick={ClickHandler} href="/">
                   <i className="fa fa-pinterest"></i>
-                </Link>
+                </Link> */}
               </div>
               <div className="copyright">
                 <p>

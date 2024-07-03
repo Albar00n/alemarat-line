@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://alemarat-line.vercel.app
+
+# Sitemaps
+Sitemap: https://alemarat-line.vercel.app/sitemap.xml

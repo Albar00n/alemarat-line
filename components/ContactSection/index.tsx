@@ -46,7 +46,9 @@ const ContactSection = () => {
   return (
     <section
       className="contact-section mb-250"
-      style={{ backgroundImage: `url('/images/contact/contact-section.png')` }}
+      style={{
+        backgroundImage: `url('/images/global/services_three_two.jpeg')`,
+      }}
     >
       <div className="container">
         <div className="row justify-content-center">
