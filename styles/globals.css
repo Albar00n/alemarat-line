@@ -473,6 +473,9 @@
   .hero-slider .slide-text {
     max-width: 500px;
   }
+  .imgSize{
+    width:100% !important;
+  }
 }
 
 .hero-slider .slide-text p {

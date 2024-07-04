@@ -59,6 +59,7 @@ const Footer = (props: any) => {
                         height: '80px',
                         objectFit: 'cover',
                       }}
+                      className="imgSize"
                     />
                     <div className="instagram-overlay">
                       <span onClick={() => setOpen(true)}>
