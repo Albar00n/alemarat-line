@@ -8,7 +8,7 @@ const menus = [
   {
     id: 1,
     title: 'Home',
-    link: '/home',
+    link: '/',
   },
 
   {
@@ -25,7 +25,7 @@ const menus = [
   {
     id: 7,
     title: 'Service',
-    link: '/service',
+    link: '/services',
   },
   {
     id: 88,
