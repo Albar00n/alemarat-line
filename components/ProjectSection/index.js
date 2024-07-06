@@ -153,9 +153,9 @@ const ProjectSection = (props) => {
       <div className="container">
         <div className="section-title mb-75">
           <h2>
-            Choose an <span className="thin">Apartment</span>
+            {t('choose')} <span className="thin">{t('best')}</span>
           </h2>
-          <p>At vero eos et accusamus et iusto odio</p>
+          {/* <p>At vero eos et accusamus et iusto odio</p> */}
         </div>
         <div className="apartment-carousel">
           <div className="row">

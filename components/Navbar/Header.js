@@ -198,7 +198,7 @@ const Header = (props) => {
               <Link href="/">
                 <i className="fa fa-facebook-f"></i>
               </Link>
-              <Link href="/">
+              <Link href="/" className="mx-2">
                 <i className="fa fa-instagram"></i>
               </Link>
               {/* <Link href="/">

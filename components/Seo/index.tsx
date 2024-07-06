@@ -38,17 +38,17 @@ const Seo = ({ title, url }: any) => {
         <meta name="og:title" content={`ALEMARAT LINE ${title}`} />
         <meta
           name="og:description"
-          content="It is a company specialized in the field of contracting and general maintenance. It was established to provide integrated services in the construction and maintenance sector in the Al Ain region. We are committed to providing high-quality services, and we ensure that our customers’ requirements are met accurately and effectively. Emirates Contracting and General Maintenance Company is your ideal choice for your projects in the United Arab Emirates."
+          content="It is a Foundation specialized in the field of contracting and general maintenance. It was established to provide integrated services in the construction and maintenance sector in the Al Ain region. We are committed to providing high-quality services, and we ensure that our customers’ requirements are met accurately and effectively. Emirates Contracting and General Maintenance Foundation is your ideal choice for your projects in the United Arab Emirates."
         />
         <meta
           name="description"
-          content="It is a company specialized in the field of contracting and general maintenance. It was established to provide integrated services in the construction and maintenance sector in the Al Ain region. We are committed to providing high-quality services, and we ensure that our customers’ requirements are met accurately and effectively. Emirates Contracting and General Maintenance Company is your ideal choice for your projects in the United Arab Emirates."
+          content="It is a Foundation specialized in the field of contracting and general maintenance. It was established to provide integrated services in the construction and maintenance sector in the Al Ain region. We are committed to providing high-quality services, and we ensure that our customers’ requirements are met accurately and effectively. Emirates Contracting and General Maintenance Foundation is your ideal choice for your projects in the United Arab Emirates."
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`ALEMARAT LINE ${title}`} />
         <meta
           name="twitter:description"
-          content="It is a company specialized in the field of contracting and general maintenance. It was established to provide integrated services in the construction and maintenance sector in the Al Ain region. We are committed to providing high-quality services, and we ensure that our customers’ requirements are met accurately and effectively. Emirates Contracting and General Maintenance Company is your ideal choice for your projects in the United Arab Emirates."
+          content="It is a Foundation specialized in the field of contracting and general maintenance. It was established to provide integrated services in the construction and maintenance sector in the Al Ain region. We are committed to providing high-quality services, and we ensure that our customers’ requirements are met accurately and effectively. Emirates Contracting and General Maintenance Foundation is your ideal choice for your projects in the United Arab Emirates."
         />
         <meta
           name="twitter:image"

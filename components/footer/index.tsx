@@ -73,7 +73,7 @@ const Footer = (props: any) => {
             <div className="col-xl-6 col-lg-4">
               <div className="contact-widget">
                 <h3>{t('nav_contact')}</h3>
-                <h6>{t('footer_title')}</h6>
+                <h6>{t('footer')}</h6>
                 <Link href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.549237048117!2d55.7793789!3d24.222561799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8ab71b2e43795f%3A0xf2eb30e22f455392!2z2KfZhNil2YXYp9ix2KfYqiDZhNin2YrZhiDZhNmE2YXZgtin2YjZhNin2Kog2Ygg2KfZhNi12YrYp9mG2Kkg2KfZhNi52KfZhdip!5e0!3m2!1sar!2sae!4v1719985705785!5m2!1sar!2sae">
                   <h6> {t('footer_map')} </h6>
                 </Link>
@@ -109,7 +109,7 @@ const Footer = (props: any) => {
                 <Link onClick={ClickHandler} href="/">
                   <i className="fa fa-facebook"></i>
                 </Link>
-                <Link onClick={ClickHandler} href="/">
+                <Link onClick={ClickHandler} href="/" className="mx-2">
                   <i className="fa fa-instagram"></i>
                 </Link>
                 {/* <Link onClick={ClickHandler} href="/">
