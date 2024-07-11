@@ -24,9 +24,9 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Seo title={t('nav_home')} url="/" />
       <div dir={isRTL ? 'rtl' : 'ltr'}>
-        <Layout>
+        {/* <Layout>
           <Component {...pageProps} />
-        </Layout>
+        </Layout> */}
       </div>
     </>
   )
