@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next'
 const ProjectSection = (props) => {
   const { t } = useTranslation('common')
 
-  const [visibleProjects, setVisibleProjects] = useState(3)
+  const [visibleProjects, setVisibleProjects] = useState(6)
 
   const handleShowMore = () => {
-    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 3)
+    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 6)
   }
   const ClickHandler = () => {
     window.scrollTo(10, 0)
@@ -145,6 +145,95 @@ const ProjectSection = (props) => {
     {
       Id: '33',
       pImg: '/images/global/ten_four.jpeg',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0025.png',
+    },
+    //
+    {
+      Id: '35',
+      pImg: '/images/global/IMG-20240727-WA0026.png',
+    },
+    {
+      Id: '36',
+      pImg: '/images/global/IMG-20240727-WA0027.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0028.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0029.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0030.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0031.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0032.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0033.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0101.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0040.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0041.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0046.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0047.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0073.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0091.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0074.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0093.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0092.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0095.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0098.png',
+    },
+    {
+      Id: '34',
+      pImg: '/images/global/IMG-20240727-WA0074.png',
     },
   ]
 
