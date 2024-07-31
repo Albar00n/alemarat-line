@@ -58,51 +58,13 @@ const MobileMenu = () => {
                 className={item.id === openId ? 'active' : null}
                 key={mn}
               >
-                {item.submenu ? (
-                  <Fragment>
-                    <p
-                      onClick={() =>
-                        setOpenId(item.id === openId ? 0 : item.id)
-                      }
-                    >
-                      {item.title}
-                      <i
-                        className={
-                          item.id === openId
-                            ? 'fa fa-angle-up'
-                            : 'fa fa-angle-down'
-                        }
-                      ></i>
-                    </p>
-                    <Collapse
-                      in={item.id === openId}
-                      timeout="auto"
-                      unmountOnExit
-                    >
-                      <List className="subMenu">
-                        <Fragment>
-                          {item.submenu.map((submenu, i) => {
-                            return (
-                              <ListItem key={i}>
-                                <Link
-                                  onClick={ClickHandler}
-                                  className="active"
-                                  href={submenu.link}
-                                >
-                                  {submenu.title}
-                                </Link>
-                              </ListItem>
-                            )
-                          })}
-                        </Fragment>
-                      </List>
-                    </Collapse>
-                  </Fragment>
-                ) : (
-                  <Link className="active" href={item.link}>
-                    {item.title}
-                  </Link>
-                )}
+                <Link
+                  onClick={() => setMenuState(!menuActive)}
+                  className="active"
+                  href={item.link}
+                >
+                  {item.title}
+                </Link>
               </ListItem>
             )
           })}

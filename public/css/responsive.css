@@ -6,14 +6,14 @@
     .contact-page .title-rotated {
         right: 128px;
     }
-    
-    
+
+
 }
 
 
 @media only screen and (max-width: 1750px) {
-    
-    
+
+
 }
 
 
@@ -39,8 +39,8 @@
     .scroll-box:before {
         height: 50px;
     }
-    
-    
+
+
 }
 
 
@@ -48,7 +48,7 @@
     .container {
         max-width: 1200px;
     }
-    
+
 
 }
 
@@ -75,22 +75,22 @@
     .call-action-inner {
         padding: 70px 65px;
     }
-    
-    
+
+
 }
 
 
 
 @media only screen and (min-width: 992px) {
-    
-    
-    
+
+
+
 }
 
 
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) { 
-    
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+
 
 }
 
@@ -124,7 +124,7 @@
         margin-bottom: 0;
     }
     .contact-widget {
-        float: left;
+        max-width: 100% !important;
         margin-top: 50px;
     }
     .contact-map {
@@ -138,19 +138,19 @@
         left: 0;
     }
 
-    
+
 }
 
 
-@media only screen and (max-width: 991px) and (min-width: 768px) { 
-    
+@media only screen and (max-width: 991px) and (min-width: 768px) {
 
-    
+
+
 }
 
 
 @media only screen and (min-width: 768px) {
-    
+
 }
 
 
@@ -213,7 +213,7 @@
     .apartment-tab .nav li a {
         font-size: 16px;
     }
-    
+
 }
 
 
@@ -244,7 +244,7 @@
     .service-page-images img:last-child {
         width: 85%;
     }
-    
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -320,7 +320,7 @@
     .hidden-bar .inner-box {
         padding: 80px 25px 40px;
     }
-    
+
 }
 
 
@@ -363,12 +363,12 @@
         right: -25px;
         padding: 10px 25px 15px;
     }
-    
+
 }
 
 
 @media only screen and (max-width: 375px) {
-    
-    
+
+
 }
 

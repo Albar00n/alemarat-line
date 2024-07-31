@@ -38,7 +38,7 @@ const Header = (props) => {
             </div>
             <div className="nav-outer clearfix">
               <nav className="main-menu navbar-expand-lg">
-                <MobileMenu />
+                {/* <MobileMenu /> */}
                 <div className="navbar-collapse collapse clearfix">
                   <ul className="navigation clearfix">
                     {data.map((item) => (
@@ -54,30 +54,6 @@ const Header = (props) => {
             </div>
 
             <div className="menu-icons">
-              <div className="nav-search ml-15">
-                <button onClick={() => setSearchState(!SearchActive)}>
-                  <i
-                    className={`fi ti-search ${
-                      SearchActive ? 'ti-close' : 'fi '
-                    }`}
-                  ></i>
-                </button>
-                <form
-                  onSubmit={SubmitHandler}
-                  className={`hide ${SearchActive ? 'show' : ''}`}
-                >
-                  <input
-                    type="text"
-                    placeholder="Search"
-                    className="searchbox"
-                    required=""
-                  />
-                  <button
-                    type="submit"
-                    className="searchbutton fa fa-search"
-                  ></button>
-                </form>
-              </div>
               <Link
                 href={asPath}
                 locale={locale === 'en' ? 'ar' : 'en'}
@@ -120,13 +96,14 @@ const Header = (props) => {
                   {/* <IoFootball size="1rem" color="" /> */}
                 </a>
               </Link>
-              <div className="menu-sidebar">
+              {/* <div className="menu-sidebar">
                 <button onClick={() => setMenuState(!menuActive)}>
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
                 </button>
-              </div>
+              </div> */}
+              <MobileMenu />
             </div>
           </div>
         </div>
