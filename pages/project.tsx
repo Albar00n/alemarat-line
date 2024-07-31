@@ -15,7 +15,7 @@ const Project = () => {
     </>
   )
 }
-export const getServerSideProps: GetStaticProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale || '', ['common'])),
