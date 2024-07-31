@@ -22,7 +22,7 @@ function App({ Component, pageProps }: AppProps) {
   const { t } = useTranslation('common')
   return (
     <>
-      <Seo title={t('nav_home')} url="/" />
+      <Seo title="Home" url="/" />
       <div dir={isRTL ? 'rtl' : 'ltr'}>
         <Layout>
           <Component {...pageProps} />

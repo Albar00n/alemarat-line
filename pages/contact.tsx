@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
     <>
-      <Seo title={`${t('nav_contact')}`} url="/contact" />
+      <Seo title="Contact Us" url="/contact" />
 
       <ContactDetails />
     </>

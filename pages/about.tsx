@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <Fragment>
-      <Seo title={t('nav_about')} url="/about" />
+      <Seo title="About Us" url="/about" />
 
       <AboutDetails />
     </Fragment>

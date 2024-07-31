@@ -9,7 +9,7 @@ const Services = () => {
 
   return (
     <>
-      <Seo title={t('nav_services')} url="/services" />
+      <Seo title="Services" url="/services" />
       <ServicesDetails />
     </>
   )
