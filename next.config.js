@@ -5,7 +5,7 @@ const withPWA = require('next-pwa')({
   dest: 'public',
 })
 const nextConfig = {
-  // i18n,
+  i18n,
   reactStrictMode: true,
 }
 
